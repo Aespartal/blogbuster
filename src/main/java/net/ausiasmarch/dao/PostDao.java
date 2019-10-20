@@ -33,7 +33,7 @@ public class PostDao {
             oPostBean.setTitulo(oResultSet.getString("titulo"));
             oPostBean.setCuerpo(oResultSet.getString("cuerpo"));
             oPostBean.setEtiquetas(oResultSet.getString("etiquetas"));
-            oPostBean.setFecha(oResultSet.getDate("fecha"));
+          //  oPostBean.setFecha(oResultSet.getDate("fecha"));
         } else {
             oPostBean = null;
         }
@@ -68,7 +68,7 @@ public class PostDao {
             oPostBean.setTitulo(rs.getString("titulo"));
             oPostBean.setCuerpo(rs.getString("cuerpo"));
             oPostBean.setEtiquetas(rs.getString("etiquetas"));
-            oPostBean.setFecha(new Timestamp(rs.getTimestamp("fecha").getTime()));
+            //oPostBean.setFecha(new Timestamp(rs.getTimestamp("fecha").getTime()));
             
             listaPostBean.add(oPostBean);        
         }
@@ -89,5 +89,5 @@ public class PostDao {
         int iResult = oPreparedStatement.executeUpdate();
         return iResult;
     }
-
+       
 }

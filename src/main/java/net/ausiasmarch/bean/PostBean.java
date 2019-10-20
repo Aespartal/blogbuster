@@ -65,6 +65,15 @@ public class PostBean {
         this.fecha = fecha;
     }
 
+    public PostBean(String titulo, String cuerpo, String etiquetas) {
+        this.titulo = titulo;
+        this.cuerpo = cuerpo;
+        this.etiquetas = etiquetas;
+    }
+
+    public PostBean() {
+    }
+
     
 
   

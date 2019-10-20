@@ -50,6 +50,9 @@ public class Json extends HttpServlet {
                     if (op.equalsIgnoreCase("insert")) {
                         out.print(oPostService.insert());
                     }
+                    if (op.equalsIgnoreCase("fill")) {
+                        out.print(oPostService.fill());
+                    }
                 }
             } catch (SQLException ex) {
                 ResponseBean oResponseBean = new ResponseBean(500, "KO");
