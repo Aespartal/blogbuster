@@ -108,14 +108,14 @@ public class PostService {
         Connection oConection = oConnectionImplementation.newConnection();
 
         Lorem lorem = LoremIpsum.getInstance();
-        int limit = Integer.parseInt(oRequest.getParameter("limit"));
+        int number = Integer.parseInt(oRequest.getParameter("number"));
 
         String titulo,cuerpo,etiquetas;
         Gson oGson = new Gson();
         PostDao oPostDao = new PostDao(oConection);
         PostBean oPostBean;
         
-        for (int i = 0; i < limit; i++) {
+        for (int i = 0; i < number; i++) {
             titulo = lorem.getTitle(2, 4);
             cuerpo = lorem.getParagraphs(2, 4);
             etiquetas = lorem.getWords(5, 10);

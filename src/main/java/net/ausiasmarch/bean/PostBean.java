@@ -8,7 +8,7 @@ package net.ausiasmarch.bean;
 import com.google.gson.annotations.Expose;
 
 import java.util.Date;
-
+/*comentario*/
 /**
  *
  * @author raznara
